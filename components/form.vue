@@ -1,18 +1,4 @@
 <template>
-  <div>
-  
-    <v-content>
-    It Worked!
-    <signin/>
-    <form/>
-    <Carousal/>
-    <v-btn icon href="/fooRoute" target="_blank">
-  <v-icon>window</v-icon> Link Text
-</v-btn
-
-    <card/>
-    <customaction/>
-    <template>
   <v-row justify="center">
     <v-dialog v-model="dialog" persistent max-width="600px">
       <template v-slot:activator="{ on, attrs }">
@@ -87,14 +73,3 @@
     }),
   }
 </script>
-
-    </v-content>
-  </div>
-</template>
-
-
-<style> 
-.box {
-  background-colour : blue;
-}
-</style>

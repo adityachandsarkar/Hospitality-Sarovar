@@ -6,7 +6,7 @@
     <v-app-bar color="red" dark fixed app>
       <v-toolbar-title>Application</v-toolbar-title>
        <!-- Component Example -->
-      <VuetifyLogo/>
+      <sarlogo/>
     </v-app-bar>
 
     <!-- Body -->
@@ -33,5 +33,6 @@ export default {}
 
    #inspire {
     background-color: white;
+    color: black;
   }
 </style>
