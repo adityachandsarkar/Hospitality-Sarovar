@@ -1,6 +1,7 @@
 <template>
   <v-row justify="center">
     <v-dialog v-model="dialog" persistent max-width="600px">
+    <!--Doesnt allow to go back-->
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           color="primary"
@@ -44,13 +45,16 @@
                   label="Age*"
                   required
                 ></v-select>
+                <!-- dropdown selection required at least one-->
               </v-col>
               <v-col cols="12" sm="6">
                 <v-autocomplete
                   :items="['Skiing', 'Ice hockey', 'Soccer', 'Basketball', 'Hockey', 'Reading', 'Writing', 'Coding', 'Basejump']"
                   label="Interests"
                   multiple
+                  
                 ></v-autocomplete>
+                <!-- dropdown selection multiple check box-->
               </v-col>
             </v-row>
           </v-container>

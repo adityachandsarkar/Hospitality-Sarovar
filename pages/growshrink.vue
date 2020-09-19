@@ -22,7 +22,7 @@
       <v-col
         v-for="n in 2"
         :key="n"
-        :cols="n === 3 ? 8 : 4"
+        :cols="n === 1 ? 8 : 4"
       >
         <v-card
           class="pa-2"
