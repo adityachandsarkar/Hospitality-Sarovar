@@ -3,14 +3,17 @@
   
     <v-content>
     It Worked!
-    <signin/>
+    
+   
     <form/>
-    <Carousal/>
-    <v-btn icon href="/fooRoute" target="_blank">
-  <v-icon>window</v-icon> Link Text
-</v-btn
+    <usage/>
 
-    <card/>
+
+     <card/>
+  
+  
+
+    
     <customaction/>
     <template>
   <v-row justify="center">
