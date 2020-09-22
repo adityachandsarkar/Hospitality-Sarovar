@@ -1,0 +1,11 @@
+<template>
+  <v-card
+    class="mt-5"
+    color="black"
+    width="400px"
+  >
+    <v-card-text>
+      Centered
+    </v-card-text>
+  </v-card>
+</template>

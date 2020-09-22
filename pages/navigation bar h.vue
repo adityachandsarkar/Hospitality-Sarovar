@@ -1,29 +1,12 @@
 <template>
-  <div>
-  
-    <v-content>
-    <carousel/>
-    <!--Adds carousal images-->
-   
-  <template>
-      <v-card
-      class="rounded-xl">
-      
+      <v-card>
         <v-card-title>
           <span class="headline"></span>
-          <!--adds header/title to the card-->
         </v-card-title>
         <v-card-text>
           <v-container>
-            <v-row>  
-            <!--Autocomplete and dropdown for searching location-->
-              <v-col cols="12" md="3" sm="6">
-                <v-autocomplete
-                  :items="['Agra', 'Delhi', 'Mumbai', 'Tirupati', 'Jalgaon', 'Tiruvantampuram', 'Ratnagiri', 'Thane', 'Banglore']"
-                  label="Destinations"
-                ></v-autocomplete>
-              </v-col>
-              <v-col cols="12" md="3"sm="6">
+            <v-row>
+              <v-col cols="12" md="3">
                 <v-menu
                   v-model="menu2"
                   :close-on-content-click="false"
@@ -33,7 +16,6 @@
                   min-width="290px"
                 >
                   <template v-slot:activator="{ on, attrs }">
-                    <!--Date Picker-->
                     <v-text-field
                       v-model="computedDateFormatted"
                       label="Date"
@@ -47,18 +29,21 @@
                 </v-menu>
                 
               </v-col>
-              <!--dropdown for services-->
-              <v-col cols="12" md="3"sm="6">
-              <!--defines columns used and their position-->
+
+              <v-col cols="12" md="3">
                 <v-autocomplete
                   :items="['Events', 'Pilgrims', 'Holidays', 'Business', 'Others']"
                   label="Services"
                   multiple
                 ></v-autocomplete>
               </v-col>
-              <!--Autocomplete and dropdown for searching location-->
-              
-              <v-col cols="12" md="3"sm="6">
+              <v-col cols="12" md="3">
+                <v-autocomplete
+                  :items="['Agra', 'Delhi', 'Mumbai', 'Tirupati', 'Jalgaon', 'Tiruvantampuram', 'Ratnagiri', 'Thane', 'Banglore']"
+                  label="Destinations"
+                ></v-autocomplete>
+              </v-col>
+              <v-col cols="12" md="3">
                 <v-autocomplete
                   :items="['Agra', 'Delhi', 'Mumbai', 'Tirupati', 'Jalgaon', 'Tiruvantampuram', 'Ratnagiri', 'Thane', 'Banglore']"
                   label="Destinations"
@@ -71,9 +56,6 @@
       </v-card>
     </v-dialog>
   </v-row>
-  <offer/>
-  <!--images-->
-  <low/>
 </template>
 
 <script>
@@ -113,8 +95,3 @@
     },
   }
 </script>
-    </v-content>
-  </div>
-</template>
-
-

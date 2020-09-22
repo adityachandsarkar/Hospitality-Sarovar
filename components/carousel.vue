@@ -7,6 +7,7 @@
       reverse-transition="fade-transition"
       transition="fade-transition"
     ></v-carousel-item>
+     <!--transition mode-->
   </v-carousel>
 </template>
 
@@ -31,4 +32,5 @@
       }
     },
   }
+
 </script>

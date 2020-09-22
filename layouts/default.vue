@@ -3,10 +3,14 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="indigo" dark fixed app>
-      <v-toolbar-title>Application</v-toolbar-title>
+    <v-app-bar color="white" dark fixed app>
+      <v-toolbar-title></v-toolbar-title>
        <!-- Component Example -->
+      <blog/>
+      <question/>
       <sarlogo/>
+      <signin/>
+      
     </v-app-bar>
 
     <!-- Body -->
@@ -17,6 +21,9 @@
     <!-- Footer -->
     <v-footer color="indigo" app>
       <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
+      <v-row>
+      <p>Lorem ipsum</p>
+      </v-row>    
     </v-footer>
 
   </v-app>
@@ -32,7 +39,7 @@ export default {}
   }
 
    #inspire {
-    background-color: white;
+    background-color: lightblue;
     color: black;
   }
 </style>
