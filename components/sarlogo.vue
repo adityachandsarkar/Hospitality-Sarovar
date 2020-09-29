@@ -8,8 +8,8 @@
 
 <style>
 .desk {
-  height: 40px;
-  width: 317px;
+  height: 38px;
+  width: 220px;
   margin: 0 auto;
   }
 </style>

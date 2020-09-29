@@ -6,24 +6,37 @@
     <!--Adds carousal images-->
    
   <template>
+  <v-container>
+      <v-col cols="12" md="12"
+      >
+       
       <v-card
-      class="rounded-xl">
+      class=" blue darken-4 mb-12 mt-6 pa-md-2 pa-sm-2 py-16 rounded-pill"
+      outlined
+      tiled
+      >
       
         <v-card-title>
           <span class="headline"></span>
           <!--adds header/title to the card-->
         </v-card-title>
         <v-card-text>
-          <v-container>
-            <v-row>  
+          
+            <v-row >  
             <!--Autocomplete and dropdown for searching location-->
-              <v-col cols="12" md="3" sm="6">
+              <v-col cols="10" md="3" sm="4"
+              class="ml-md-16 ml-sm-16 ml-6
+                     mt-md-n6 mt-sm-n6 mt-n8">
+              <!--v-icon large color="white">mdi-city</v-icon-->
                 <v-autocomplete
                   :items="['Agra', 'Delhi', 'Mumbai', 'Tirupati', 'Jalgaon', 'Tiruvantampuram', 'Ratnagiri', 'Thane', 'Banglore']"
                   label="Destinations"
+                  prepend-icon="mdi-city"
                 ></v-autocomplete>
               </v-col>
-              <v-col cols="12" md="3"sm="6">
+              <v-col cols="10" md="2"sm="4"
+              class="ml-md-2 ml-sm-2 ml-6
+                     mt-md-n6 mt-sm-n6 mt-n6">
                 <v-menu
                   v-model="menu2"
                   :close-on-content-click="false"
@@ -37,7 +50,7 @@
                     <v-text-field
                       v-model="computedDateFormatted"
                       label="Date"
-                      
+                      prepend-icon="mdi-calendar"
                       readonly
                       v-bind="attrs"
                       v-on="on"
@@ -48,27 +61,55 @@
                 
               </v-col>
               <!--dropdown for services-->
-              <v-col cols="12" md="3"sm="6">
+              <v-col cols="10" md="2"sm="4"
+              class="ml-md-2  ml-sm-16 ml-6
+                     mt-md-n6 mt-sm-n6 mt-n6">
               <!--defines columns used and their position-->
                 <v-autocomplete
                   :items="['Events', 'Pilgrims', 'Holidays', 'Business', 'Others']"
                   label="Services"
                   multiple
+                  prepend-icon="mdi-call-split"
+                  
                 ></v-autocomplete>
               </v-col>
               <!--Autocomplete and dropdown for searching location-->
               
-              <v-col cols="12" md="3"sm="6">
+              <v-col cols="7" md="2"sm="4"
+              class="ml-md-3 ml-sm-2 ml-6
+                     mt-md-n6 mt-sm-n6 mt-n6">
                 <v-autocomplete
                   :items="['Agra', 'Delhi', 'Mumbai', 'Tirupati', 'Jalgaon', 'Tiruvantampuram', 'Ratnagiri', 'Thane', 'Banglore']"
-                  label="Destinations"
+                  
+                  label="Occupancy"
+                  prepend-icon="mdi-account"
+                  
+                  
                 ></v-autocomplete>
               </v-col>
+              <v-col cols="3" md="2"sm="2" >
+              <div class="ml-md-4 ml-sm-4 
+                          mt-md-n6 mt-sm-n14 mt-n6" >
+            <v-btn
+              color="blue darken-4"
+              fab
+              large
+              dark
+            >
+              <v-icon>mdi-magnify</v-icon>
+            </v-btn>
+          </div>
+              <!--v-btn icon>
+        <v-icon large color="white">mdi-action-search</v-icon>
+      </v-btn-->
+          </v-col>
             </v-row>
-          </v-container>
+          
           
         </v-card-text>
       </v-card>
+      </v-col>
+      </v-container>
     </v-dialog>
   </v-row>
   <offer/>

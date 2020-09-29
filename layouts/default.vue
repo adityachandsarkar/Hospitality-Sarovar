@@ -7,7 +7,6 @@
       <v-toolbar-title></v-toolbar-title>
        <!-- Component Example -->
       <blog/>
-      <question/>
       <sarlogo/>
       <signin/>
       
@@ -19,12 +18,11 @@
     </v-content>
     
     <!-- Footer -->
-    <v-footer color="indigo" app>
-      <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
+  
       <v-row>
-      <p>Lorem ipsum</p>
+      <Footer/>
       </v-row>    
-    </v-footer>
+    
 
   </v-app>
 </template>
