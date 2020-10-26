@@ -1,62 +1,84 @@
-<template>
-  <v-footer
-    light
-    padless
-    color="#0A4082"
-  >
-  <v-row>
-    <v-card cols="12" sm="12" md="12"
-      flat
-      tile
-      
-      color="#0A4082"
-      height="2px"
-    >
-    <!-- doubt -->
-    </v-card>
-    </v-row>
+<template>  
+  
+      <v-footer 
+        color="#0a4082" 
+        > 
+        
+        <v-container class="align-center">
+          <v-row>
+            <v-col
+              cols="12"
+              sm="3"
+              md="3"
+              >
+              <h5>CONTACT US</h5>
+                
+              <v-divider></v-divider>
+              <br>
+              <font size="2">
+              +44 345 678 903<br>
+              Sarovar@gmail.com<br>
+              Book a Hotel<br></font>
+              <v-btn icon color="#FFFF" class="mt-4 ml-n2">
+                  <v-icon medium >mdi-instagram</v-icon>
+                </v-btn>
+               
+                <v-btn icon color="#FFFF" class="mt-4">
+                  <v-icon medium >mdi-twitter</v-icon>
+                </v-btn>
+               
+                <v-btn icon color="#FFFF" class="mt-4">
+                  <v-icon medium >mdi-facebook</v-icon>
+                </v-btn>
+            </v-col>
+            <v-col
+              cols="12"
+              sm="3"
+              md="3"
+              >
+              <h5>SERVICES</h5>
+              <v-divider></v-divider>
+              <br>
+              <font size="2">
+              Contact Us<br>
+              Booking & Payment<br>
+              Destinations<br>
+              Rooms<br>
+              FAQ<br></font>
+              
+            </v-col>
+            <v-col
+              cols="12"
+              sm="3"
+              md="3"
+              >
+            <h5>INFORMATION</h5>
+              <v-divider></v-divider>
+              <br>
+              <font size="2">
+              About Sarovar<br>
+              Sign Up<br>
+              Privacy Policy<br>
+              Terms & Conditions<br>
+              Press Enquiries<br></font>
+            </v-col>
 
-    <v-row>
-    <v-card cols="12" sm="12" md="12"
-      flat
-      tile
-      class="blue-- text text-center"
-      color="#E4F2FC"
-    >
-      <v-card-text>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4 --text"
-          icon
-        >
-          <v-icon size="42px">{{ icon }}</v-icon>
-        </v-btn>
-      </v-card-text>
+            <v-col
+              cols="12"
+              sm="3"
+              md="3"
+              >
+            <h5>DEALS & BOOKINGS</h5>
+              <v-divider></v-divider>
+              <br>
+              <font size="2">
+              My Bookings<br>
+              My Deals<br>
+              Festive Offers<br>
+              Upcoming Deals<br></font>
+            </v-col>
 
-      <v-card-text class="blue--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      </v-card-text>
-
-      <v-divider></v-divider>
-    </v-card>
-    </v-row>
-  </v-footer>
-</template>
-
-<script>
-  export default {
-    data: () => ({
-      icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
-    }),
-  }
-</script>
-
-<style>
-.footcol{color:#E4F2FC ;}
-</style>
+          </v-row>
+        </v-container>
+      </v-footer>
+ </template>

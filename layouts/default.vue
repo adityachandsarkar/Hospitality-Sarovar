@@ -3,7 +3,7 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="white" dark fixed app>
+    <v-app-bar color="white" light fixed app>
       <v-toolbar-title></v-toolbar-title>
        <!-- Component Example -->
       <blog/>
@@ -18,10 +18,9 @@
     </v-content>
     
     <!-- Footer -->
+   
   
-      <v-row>
-      <Footer/>
-      </v-row>    
+         
     
 
   </v-app>

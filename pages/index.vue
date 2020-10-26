@@ -26,12 +26,16 @@
             <!--Autocomplete and dropdown for searching location-->
               <v-col cols="10" md="3" sm="4"
               class="ml-md-16 ml-sm-16 ml-6
-                     mt-md-n6 mt-sm-n6 mt-n8">
+                     mt-md-n6 mt-sm-n6 mt-n8"
+                     >
               <!--v-icon large color="white">mdi-city</v-icon-->
                 <v-autocomplete
+                
                   :items="['Agra', 'Delhi', 'Mumbai', 'Tirupati', 'Jalgaon', 'Tiruvantampuram', 'Ratnagiri', 'Thane', 'Banglore']"
                   label="Destinations"
                   prepend-icon="mdi-city"
+                  background-colour="blue"
+
                 ></v-autocomplete>
               </v-col>
               <v-col cols="10" md="2"sm="4"
@@ -79,7 +83,7 @@
               class="ml-md-3 ml-sm-2 ml-6
                      mt-md-n6 mt-sm-n6 mt-n6">
                 <v-autocomplete
-                  :items="['Agra', 'Delhi', 'Mumbai', 'Tirupati', 'Jalgaon', 'Tiruvantampuram', 'Ratnagiri', 'Thane', 'Banglore']"
+                  :items="['1', '2', '3', '4', '5']"
                   
                   label="Occupancy"
                   prepend-icon="mdi-account"
@@ -115,6 +119,7 @@
   <offer/>
   <!--images-->
   <low/>
+  <Footer/>
 </template>
 
 <script>
