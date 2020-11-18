@@ -4,7 +4,6 @@
     <!--offset defines position/distance between image and text-->
       <v-col
         md="6" 
-        
         offset-md="3"
         <img
           class="low"
